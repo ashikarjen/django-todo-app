@@ -16,7 +16,7 @@
             <div class="card shadow-2-strong" style="border-radius: 1rem;">
               <div class="card-body p-5">
     
-                <h3 class="mb-5">Log in</h3>
+                <center><h1 class="mb-5">Log in</h1></center>
                 <form action="" method="POST">
                   {% csrf_token %}
                 <div class="form-outline mb-3">
@@ -34,7 +34,7 @@
               </form>
               </br>
               {% for message in messages %}
-                <center><p id="">{{message}}</p></center>
+                <center><p id="" style="color:red;">{{message}}</p></center>
               {% endfor %}
                 <p class="text-center text-muted mt-2 mb-0">Don't have any account? <a href="/"
                   class="fw-bold text-body"><u>Register here</u></a></p>

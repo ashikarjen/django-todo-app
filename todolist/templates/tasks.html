@@ -1,6 +1,13 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <style>
+      .hello-msg{
+        font-size: 15px;
+        color: #fff;
+        margin-right: 20px;
+      }
+    </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
@@ -25,6 +32,8 @@
             
           </div>
         </div>
+        <span class="hello-msg">Hello,&nbsp;{{request.user}}</span>
+        <span><a class="hello-msg" href="{% url 'logout' %}">Logout</a></span>
       </nav>
       
       <div class="container my-3">
